@@ -3,7 +3,7 @@ class ExternalScene extends window.BaseScene {
     super({
       name: "test_island",
       map: {
-        json: "https://sunflower-land.github.io/plugin-example/public/map.json",
+        json: "https://sunflower-land.github.io/community-island-example/public/map.json",
       },
       player: {
         spawn: {
