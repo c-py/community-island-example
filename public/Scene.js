@@ -1,11 +1,11 @@
-console.log({ InsideScene: window.secret });
-
+console.log({ host: window.host });
 class ExternalScene extends window.BaseScene {
   constructor() {
-    console.log("Construtued");
     super({
       name: "ExternalScene",
-      map: { json: "http://localhost:3002/map.json" },
+      map: {
+        json: "https://sunflower-land.github.io/plugin-example/public/map.json",
+      },
       player: {
         spawn: {
           x: 210,
@@ -13,17 +13,5 @@ class ExternalScene extends window.BaseScene {
         },
       },
     });
-
-    // this.setSpawn({ x: 100, y: 100 });
   }
-
-  // async create() {
-  //   console.log("Scene create!");
-
-  //   this.map = this.make.tilemap({
-  //     key: "community-map",
-  //   });
-
-  //   super.create();
-  // }
 }
