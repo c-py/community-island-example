@@ -1,3 +1,5 @@
+import "phaser";
+
 class ExternalScene extends window.BaseScene {
   constructor() {
     super({
