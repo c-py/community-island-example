@@ -1,6 +1,4 @@
-import "phaser";
-
-class ExternalScene extends window.BaseScene {
+class ExternalScene extends Phaser.Scene {
   constructor() {
     super({
       player: {
